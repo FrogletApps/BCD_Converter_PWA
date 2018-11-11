@@ -24,11 +24,16 @@
 
 	<body>
 		<div id="topBar">
-			<h1>BCD Converter</h1>
-        </div>
-        
-        <br>
-
+			<h1>Binary Coded Decimal Converter</h1>
+		</div>
+		
+		<p>Please enter a number:</p>
+		<div id="center">
+			<input oninput="convert()" type="text" id="numberToConvert">
+			<input onclick="convert()" type="button" value="Convert to BCD">
+		</div>
+		<br><br>
+		<p id="output"></p>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="upup.min.js"></script>
