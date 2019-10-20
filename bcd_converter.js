@@ -9,7 +9,7 @@ function convert(){
         if (isNaN(inputStore[i])){
             errorStore.push(i);
         }
-        var binary = resultStore[i] = parseInt(inputStore[i]).toString(2);
+        var binary = resultStore[i] = parseInt(inputStore[i], 10).toString(2);
         var paddedBinary = binary.padStart(4, 0);
         resultStore[i] = paddedBinary.toString() + " ";
     }
